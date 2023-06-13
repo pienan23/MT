@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(pexels-mikhail-nilov-7662609.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    width: 350px;
+    padding: 12px;
+    border-radius: 6px;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+  
+}
+input{
+    padding:6px;
+    margin-bottom: 12px;
+    outline: none;
+    border: 1px solid rgb(151, 148, 148);
+}
+input[type='submit']{
+   background-color: #675afe;
+    color: aliceblue;
+    border: none;
+}
+.message{
+    background-color: white;
+    display: none;
+    margin-top: 10px;
+    width: 350px;
+    padding: 12px;
+    position: relative;
+    padding-bottom: 20px;
+    border-radius: 6px;
+   animation: anime 0.5s ease-out;
+
+}
+@keyframes anime {
+    form{
+     transform: translate(50px);
+        
+    }
+}
+.message h3{
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: rgb(78, 77, 77);
+    font-weight:bold;
+}
+.message p{
+    margin-left: 6px;
+    padding-top: 10px;
+    letter-spacing:0.5px;
+    font-size: 14PX;
+}
+
+
+.invalidé{
+    color: rgb(221, 12, 22);
+}
+.invalidé::before{
+    content: 'X';
+    font-size: 14PX;
+    padding-right: 5PX;
+}
+.validé{
+    color: rgb(4, 156, 73);
+}
+.validé::before{
+    content: 'V';
+    font-size: 14PX;
+    padding-right: 5PX;
+}
